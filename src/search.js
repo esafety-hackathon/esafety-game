@@ -1,5 +1,5 @@
 function flattenArticle(article) {
-  return article[0] + article[1] + (article[2] || []).join(' ');
+  return article[0] + article[1] + article[2];
 }
 
 function searchTerm(term, sections) {
