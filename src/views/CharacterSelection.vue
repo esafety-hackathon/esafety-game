@@ -30,7 +30,8 @@ export default {
     },
     next() {
       this.$root.data.playerName = this.name;
-      this.$root.data.playerAvatar = this.avatar;
+      this.$root.data.playerAvatar = this.selectedAvatar;
+      this.$router.push('/dashboard');
     }
   }
 }

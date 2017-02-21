@@ -16,6 +16,11 @@ export default new Router({
       path: '/characterSelection',
       name: 'characterSelection',
       component: Views.CharacterSelection,
+    },
+    {
+      path: '/dashboard',
+      name: 'dashboard',
+      component: Views.Dashboard,
     }
   ]
 });
