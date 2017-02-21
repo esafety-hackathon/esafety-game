@@ -1,12 +1,21 @@
 <template>
-  <div class="section" :style="'background:'+section.theme+'; color:'+section.textColor">
+  <div class="section" :style="'background:'+section.theme+'; color:'+section.textColor" @click="next">
     <div class="title">{{ section.name }}</div>
     <p>{{ section.desc }}</p>
   </div>
 </template>
 <script>
 export default {
-  props: ['section']
+  props: ['section'],
+  methods: {
+    next() {
+      for (const sectionKey in this.$root.data.sections) {
+        if (this.$root.data.sections[sectionKey] === this.section) {
+          this.$router.push(`/section/${sectionKey}`);
+        }
+      }
+    }
+  }
 }
 </script>
 <style scoped>

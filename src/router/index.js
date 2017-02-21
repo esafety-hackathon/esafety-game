@@ -21,6 +21,18 @@ export default new Router({
       path: '/dashboard',
       name: 'dashboard',
       component: Views.Dashboard,
-    }
+    },
+    {
+      path: '/section/:name',
+      name: 'sectionview',
+      component: Views.SectionViewer,
+      children: [
+        {
+          path: 'truefalse/:question',
+          name: 'truefalseactivityview',
+          component: Views.Activities.TrueFalseActivity,
+        }
+      ]
+    },
   ]
 });

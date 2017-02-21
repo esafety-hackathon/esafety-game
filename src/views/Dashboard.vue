@@ -12,9 +12,7 @@
       </div>
       <div class="container" id="sections">
         <h1>Sections</h1>
-        <section-renderer
-        v-for="section in this.$root.data.sections"
-        :section="section"></section-renderer>
+        <section-renderer v-for="section in this.$root.data.sections" :section="section"></section-renderer>
       </div>
     </div>
   </div>
