@@ -1,7 +1,7 @@
 <template>
     <div id="indexview">
       <img class="image" src="/static/cdlogo.png">
-      <h1>The e-Safety Game</h1>
+      <h1>E-Safety</h1>
       <p class="font">Learn how to be safe online</p>
       <img class="playbutton" src="/static/bcv2.png" @click="next">
     </div>
