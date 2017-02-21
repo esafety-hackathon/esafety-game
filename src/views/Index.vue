@@ -1,5 +1,6 @@
 <template>
     <div id="indexview">
+      <img class="image" src="/static/cdlogo.png">
       <h1>The e-Safety Game</h1>
       <p class="font">Learn how to be safe online</p>
       <button class="circle" @click="next">Play</button>
@@ -25,7 +26,15 @@ h1 {
   margin: 0;
   text-align: center;
   position: absolute;
-  top: 35%;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.image {
+  height: 212px;
+  width: 340px;
+  position: absolute;
+  top: 17%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
