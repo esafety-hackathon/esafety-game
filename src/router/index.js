@@ -11,6 +11,11 @@ export default new Router({
       path: '/',
       name: 'index',
       component: Views.Index,
+    },
+    {
+      path: '/characterSelection',
+      name: 'characterSelection',
+      component: Views.CharacterSelection,
     }
   ]
 });
