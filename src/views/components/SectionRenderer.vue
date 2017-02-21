@@ -1,5 +1,5 @@
 <template>
-  <div class="section" :style="'background:'+section.theme">
+  <div class="section" :style="'background:'+section.theme+'; color:'+section.textColor">
     <div class="title">{{ section.name }}</div>
     <p>{{ section.desc }}</p>
   </div>
@@ -20,5 +20,8 @@ export default {
   padding: 16px;
   margin-bottom: 32px;
   padding-bottom: 48px;
+  cursor: pointer;
+}
+.section:hover {
 }
 </style>
