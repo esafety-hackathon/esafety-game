@@ -1,7 +1,7 @@
 <template>
     <div id="indexview">
       <h1>The e-Safety Game</h1>
-      <p>Learn how to be safe online</p>
+      <p class="font">Learn how to be safe online</p>
       <button class="circle" @click="next">Play</button>
     </div>
 </template>
@@ -23,6 +23,19 @@ export default {
 }
 h1 {
   margin: 0;
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.font {
+  margin: 0;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .circle {
   width: 72px;
@@ -35,7 +48,11 @@ h1 {
   display: inline-block;
   font-size: 24px;
   font-weight: bold;
-  color: rgba(0,0,0,0);
+  color: black(0,0,0,0);
   margin-right: 8px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>
