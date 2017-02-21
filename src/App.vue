@@ -12,7 +12,7 @@ export default {
 
 <style>
 body {
-  background: url(http://www.federalmogul.com/en-US/PublishingImages/SocialMedia/socialmedia_background.jpg);
+  background: url(/static/background.png);
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
 }
