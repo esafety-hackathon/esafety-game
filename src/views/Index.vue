@@ -3,7 +3,7 @@
       <img class="image" src="/static/cdlogo.png">
       <h1>The e-Safety Game</h1>
       <p class="font">Learn how to be safe online</p>
-      <button class="circle" @click="next">Play</button>
+      <img class="playbutton" src="/static/bcv2.png" @click="next">
     </div>
 </template>
 
@@ -37,6 +37,15 @@ h1 {
   top: 17%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.playbutton {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 .font {
   margin: 0;
