@@ -6,7 +6,8 @@
       <avatar v-for="avatar in this.$root.data.avatars" :url="avatar" v-on:clicked="avatarSelected"></avatar>
     </div>
     <h2>Character Name</h2>
-    <input type="text" placeholder="Character Name"></input>
+    <input type="text" placeholder="Character Name" v-model="name"></input><br /><br />
+    <button v-if="name && selectedAvatar" @click="next">Continue</button>
   </div>
 </template>
 <script>
@@ -15,10 +16,21 @@ export default {
   components: {
     'avatar': Avatar,
   },
+  data() {
+    return {
+      selectedAvatar: null,
+      name: null,
+    }
+  },
   name: 'characterSelection',
   methods: {
-    avatarSelected(args) {
-      console.log(args);
+    avatarSelected(avatar) {
+      this.selectedAvatar = avatar;
+      this.$emit('avatarSelected', avatar);
+    },
+    next() {
+      this.$root.data.playerName = this.name;
+      this.$root.data.playerAvatar = this.avatar;
     }
   }
 }

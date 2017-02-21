@@ -1,12 +1,21 @@
 <template>
-  <div class="avatar" v-bind:style="'background-image:url('+url+')'" @click="click"></div>
+  <div
+    class="avatar"
+    v-bind:style="'background-image:url('+url+')'"
+    @click="click"
+    :class="this.selected ? 'selected' : 'notSelected'"></div>
 </template>
 <script>
 export default {
   props: ["url"],
+  computed: {
+    selected() {
+      return this.$parent.selectedAvatar === this.url;
+    }
+  },
   methods: {
     click() {
-      this.$emit('clicked');
+      this.$emit('clicked', this.url);
     }
   }
 }
@@ -25,6 +34,10 @@ $hoverSize: 92px;
 }
 
 .avatar:hover {
+  border: 2px solid white;
+}
+
+.avatar.selected {
   border: 2px solid yellow;
 }
 </style>
