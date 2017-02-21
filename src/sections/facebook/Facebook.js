@@ -8,6 +8,7 @@ const facebook = new Section({
   textColor: 'white', // text colour
 });
 
-facebook.addActivity(new Activities.TrueFalseActivity('is facebook good?', false));
+facebook.addActivity(new Activities.TrueFalseActivity('test', false));
+facebook.addActivity(new Activities.TrueFalseActivity('test 2', true));
 
 export default facebook;
