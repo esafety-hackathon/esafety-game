@@ -6,6 +6,7 @@ const facebook = new Section({
   desc: 'Learn more about staying safe on Facebook', // description of the section
   theme: '#3B5998', // colour theme of the section
   textColor: 'white', // text colour
+  file: require('./data')
 });
 
 facebook.addActivity(new Activities.TrueFalseActivity('test', false));

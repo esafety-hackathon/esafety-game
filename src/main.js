@@ -4,8 +4,11 @@ import Vue from 'vue';
 import App from './App';
 import router from './router';
 import dataStore from './DataStore';
+import marked from 'marked';
 
 window.dataStore = dataStore;
+
+Vue.filter('marked', text => marked(text));
 
 /* eslint-disable no-new */
 new Vue({
