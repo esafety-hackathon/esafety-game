@@ -1,18 +1,16 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Hello from 'components/Hello'
+import Vue from 'vue';
+import Router from 'vue-router';
+import Views from '../views/Views';
 import dataStore from '../DataStore';
 
-Vue.use(Router)
-
-console.log(dataStore.sections.passwordSecurity.activities[0].component);
+Vue.use(Router);
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'appa',
-      component: dataStore.sections.passwordSecurity.activities[0].component
+      name: 'index',
+      component: Views.Index,
     }
   ]
-})
+});

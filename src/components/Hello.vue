@@ -1,5 +1,4 @@
 <template>
-  <marquee>memes are cool test</marquee>
 </template>
 
 <script>
