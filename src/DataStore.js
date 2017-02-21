@@ -14,7 +14,17 @@ const datastore = {
     instagram,
     twitter,
     passwordSecurity,
-  }
+  },
+  avatars: [
+    'https://vuejs.org/images/logo.png',
+    'https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx',
+    'https://vuejs.org/images/logo.png',
+    'https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx',
+    'https://vuejs.org/images/logo.png',
+    'https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx',
+    'https://vuejs.org/images/logo.png',
+    'https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx',
+  ]
 };
 
 export default datastore;
