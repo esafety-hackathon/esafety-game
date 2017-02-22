@@ -22,10 +22,9 @@ body {
   text-align: center;
 }
 .container {
+  width: 100%;
   max-width: 1200px;
-  min-width: 1200px;
   display: inline-block;
   margin: 0 auto;
 }
-
 </style>

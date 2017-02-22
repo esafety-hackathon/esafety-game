@@ -25,12 +25,20 @@ export default {
   font-weight: bold;
 }
 .section {
-  display: block;
   padding: 16px;
   margin-bottom: 32px;
   padding-bottom: 48px;
   cursor: pointer;
+  flex: 1;
 }
+
+@media only screen and (max-width:1024px) {
+  .section {
+    padding: 1rem 0;
+    margin: 1rem 0;
+  }
+}
+
 .section:hover {
 }
 </style>

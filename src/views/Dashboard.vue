@@ -79,6 +79,10 @@ export default {
 #sections, #searchResults {
   color: white;
 }
+#sections {
+  display: flex;
+  flex-direction: column;
+}
 li {
   margin: 13px 0;
   cursor: pointer;
@@ -182,5 +186,66 @@ li {
 }
 #rhs .circle {
   font-size: 32px;
+}
+@media only screen and (max-width:1024px) {
+  #dashboardView {
+
+  }
+  .circle {
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+    font-size: 17px !important;
+  }
+  #rhs {
+    position: initial;
+    display: inline-block;
+  }
+
+  .container {
+
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  #searchbar {
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+
+    input[type=text] {
+      padding: 1rem 0;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  #result {
+    position: absolute;
+    top: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+  }
+
+  #resultWrapper #exit {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  #resultWrapper #exit:hover {
+    top: 1rem;
+    right: 1rem;
+  }
+}
+</style>
+<style lang="scss">
+@media only screen and (max-width:1024px) {
+  img {
+    width: 100%;
+  }
 }
 </style>
