@@ -25,6 +25,7 @@ const datastore = {
     'http://icons.iconarchive.com/icons/hopstarter/halloween-avatars/256/Grim-Reaper-icon.png',
     'http://icons.iconarchive.com/icons/hopstarter/halloween-avatars/256/Voodoo-Doll-icon.png',
     'http://icons.iconarchive.com/icons/hopstarter/brown-monsters/1024/Brown-Monsters-01-icon.png',
+    '/static/smwug.png',
     'http://www.avatarsdb.com/avatars/spongebob_squarepants_2.gif',
     'http://m.memegen.com/t7mxfo.jpg',
   ]
