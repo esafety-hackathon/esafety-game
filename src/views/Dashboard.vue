@@ -3,7 +3,7 @@
     <div id="dashboardView">
       <div id="navbar">
         <div class="circle" id="points" title="Points">{{ this.$root.data.points }}</div>
-        <div class="circle" :title="'Avatar for ' + this.$root.data.playerName " :style="'background-image:url('+this.$root.data.playerAvatar+')'"> .</div>
+        <div class="circle avatar" :title="'Avatar for ' + this.$root.data.playerName " :style="'background-image:url('+this.$root.data.playerAvatar+')'"> .</div>
         <div id="rhs">
           <div class="circle" id="points" title="Points">⚙️</div>
           <div class="circle" id="points" title="Points">🏆</div>
@@ -60,7 +60,7 @@ export default {
   },
   computed: {
     shouldSearch() {
-      return this.query.length > 3;
+      return this.query.length > 0;
     }
   },
   methods: {
@@ -108,11 +108,12 @@ li {
   padding: 1rem;
   color: black;
   z-index: 9;
+  overflow: auto;
 }
 #resultWrapper #exit {
   position: absolute;
   top: 7rem;
-  right: 7rem;
+  right: 8rem;
   color: black;
   z-index: 10;
   text-transform: uppercase;
@@ -124,7 +125,7 @@ li {
 #resultWrapper #exit:hover {
   padding: 1.3rem;
   top: 6.7rem;
-  right: 6.7rem;
+  right: 7.7rem;
   background: #dedede;
 }
 #searchbar {
@@ -164,6 +165,10 @@ li {
 }
 #points {
   color: black;
+}
+.avatar {
+  background-size: auto 72px;
+  background-position: center;
 }
 .container {
   text-align: left;

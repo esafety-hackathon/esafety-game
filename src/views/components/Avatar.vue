@@ -20,7 +20,7 @@ export default {
   }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 $size: 72px;
 $hoverSize: 92px;
 .avatar {
@@ -28,16 +28,18 @@ $hoverSize: 92px;
   width: $size;
   height: $size;
   cursor: pointer;
-  background-size: $size $size;
+  background-size: auto $size;
+  background-position: center;
   margin: 4px;
-  border: 2px solid rgba(0, 0, 0, 0);
 }
 
 .avatar:hover {
   border: 2px solid white;
+  margin: 2px;
 }
 
 .avatar.selected {
   border: 2px solid yellow;
+  margin: 2px;
 }
 </style>

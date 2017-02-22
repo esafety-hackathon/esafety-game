@@ -7,7 +7,7 @@
     </div>
     <h2>Character Name</h2>
     <input type="text" placeholder="Character Name" v-model="name"></input><br /><br />
-    <button v-if="name && selectedAvatar" @click="next">Continue</button>
+    <div class="button" v-if="name && selectedAvatar" @click="next">Continue</div>
   </div>
 </template>
 <script>
@@ -43,6 +43,27 @@ export default {
 
 input[type=text] {
   font-size: 18px;
+  padding: 6px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.button {
+  color: black;
+  background: #fafafa;
+  border-bottom: 3px solid #555;
+  display: inline-block;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: white;
+}
+
+.button:active {
+  background: #ccc;
 }
 
 #avatars {

@@ -3,7 +3,7 @@
 <!--<h1>{{ section.name }}</h1>
 <p>{{ section.desc }}</p>-->
 <div class="document">
-  <h1>{{ this.section.name }}</h1>
+  <h1><span @click="$router.go(-1)" style="cursor: pointer">🔙</span>  {{ this.section.name }}</h1>
   <div class="article" v-for="article in this.section.file">
     <h2>{{ article[0] }}</h2>
     <p v-html="marked(article[1])"></p>
