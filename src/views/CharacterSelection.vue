@@ -1,7 +1,7 @@
 <template>
   <div id="characterSelectionView">
     <h1>Character Selection</h1>
-    <h2>Avatar</h2>
+    <h2>Avatars</h2>
     <div id="avatars">
       <avatar v-for="avatar in this.$root.data.avatars" :url="avatar" v-on:clicked="avatarSelected"></avatar>
     </div>
