@@ -12,4 +12,9 @@ to handle this. Make sure you aren't just posting stuff blindly for the public t
 
 ![Post specifically](/static/articles/facebook/post-specific.png)`,
     'privacy public appropriate apt settings safe'],
+  [
+    `How do I change my password on Instagram?`,
+`To change your password on Instagram first go to the top right Options Menu, then go to Change Password, 
+then enter your old password and enter yor new password twice. Tada, you have now chanegd your password.
+[Screenshots],(https://drive.google.com/drive/folders/0B-bUzSLIYWWKbUtsQ2dOOVR6dTA) `]
 ];
