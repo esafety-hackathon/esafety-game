@@ -3,10 +3,18 @@
 <!--<h1>{{ section.name }}</h1>
 <p>{{ section.desc }}</p>-->
 <div class="document">
-  <h1><span @click="$router.go(-1)" style="cursor: pointer">🔙</span>  {{ this.section.name }}</h1>
-  <div class="article" v-for="article in this.section.file">
-    <h2>{{ article[0] }}</h2>
-    <p v-html="marked(article[1])"></p>
+  <div class="hSection">
+    <h1><span @click="$router.go(-1)" style="cursor: pointer">🔙</span>  {{ this.section.name }} <span class="light">| Help Articles</span></h1>
+    <div class="article" v-for="article in this.section.file">
+      <h2>{{ article[0] }}</h2>
+      <p v-html="marked(article[1])"></p>
+    </div>
+  </div>
+  <div class="hSection">
+    <h1><span @click="$router.go(-1)" style="cursor: pointer">🔙</span>  {{ this.section.name }} <span class="light">| Test</span></h1>
+    <div class="testQ" v-for="activity in this.section.activities">
+      <component :is="activityType(activity)" :activity="activity"></component>
+    </div>
   </div>
 </div>
 <router-view @next="next" :key="$route.params.question"></router-view>
@@ -14,7 +22,11 @@
 </template>
 <script>
 import marked from 'marked';
+import TrueFalseActivity from './activities/TrueFalseActivity';
 export default {
+  components: {
+    'truefalse': TrueFalseActivity,
+  },
   data() {
     return {
       section: this.$root.data.sections[this.$route.params.name]
@@ -36,6 +48,10 @@ export default {
         this.$router.push(`/section/${this.$route.params.name}/truefalse/${q + 1}`);
       }
     },
+    activityType(activity) {
+      if (activity.type === 'custom') return activity.component;
+      return activity.type;
+    },
     marked(content) {
       return marked(content);
     },
@@ -47,14 +63,19 @@ export default {
 </script>
 <style lang="scss">
 .sectionViewer {
-  margin: 1rem;
-  padding: 1rem;
   text-align: left;
-  background: #fafafa;
   color: black;
 }
-
+.hSection {
+  background: #fafafa;
+  margin: 1rem;
+  padding: 1rem;
+}
 .document {
+  .light {
+    color: #555;
+    font-weight: 300;
+  }
   .article {
     padding: 1rem;
     margin-bottom: 0;
