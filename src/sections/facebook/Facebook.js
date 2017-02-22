@@ -11,5 +11,12 @@ const facebook = new Section({
 
 facebook.addActivity(new Activities.TrueFalseActivity('test', false));
 facebook.addActivity(new Activities.TrueFalseActivity('test 2', true));
+facebook.addActivity(
+  new Activities.MultiActivity(
+    'question here', // question for the activity
+    ['answer 1', 'answer 2', 'answer 3'], // possible answers
+    0,
+  )
+); // the item in the possible answers that is right (in this it's index 0 so the first answer)
 
 export default facebook;
