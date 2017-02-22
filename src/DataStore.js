@@ -17,7 +17,6 @@ const datastore = {
   },
   avatars: [
     'http://findicons.com/files/icons/1072/face_avatars/300/d05.png',
-    'https://bdobase.info/img/users/avatars/71.png',
     'http://www.puzzelo.com/assets/images/profiles/profile-1.png',
     'http://www.iconarchive.com/download/i47408/hopstarter/face-avatars/Female-Face-FB-3.ico',
     'http://icons.veryicon.com/ico/Avatar/Halloween%20Avatars/mask%203.ico',
