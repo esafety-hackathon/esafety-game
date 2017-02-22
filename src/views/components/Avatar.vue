@@ -35,17 +35,19 @@ $hoverSize: 92px;
   margin: 4px;
 }
 
-.avatar:hover {
-  border: 2px solid white;
-  background-size: auto $hoverSize;
-  border-radius: $hoverSize;
-  height: $hoverSize;
-  width: $hoverSize;
-  margin: 2px;
-}
-
 .avatar.selected {
   border: 2px solid yellow;
   margin: 2px;
+}
+
+@media only screen and (min-width:1024px) {
+  .avatar:hover {
+    border: 2px solid white;
+    background-size: auto $hoverSize;
+    border-radius: $hoverSize;
+    height: $hoverSize;
+    width: $hoverSize;
+    margin: 2px;
+  }
 }
 </style>

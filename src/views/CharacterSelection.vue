@@ -41,10 +41,6 @@ export default {
   text-align: center;
 }
 
-@media only screen and (max-width:1024px) {
-
-}
-
 input[type=text] {
   font-size: 18px;
   padding: 6px;
@@ -72,5 +68,11 @@ input[type=text] {
 
 #avatars {
   display: inline-block;
+}
+
+@media only screen and (max-width:1024px) {
+  #characterSelectionView {
+    padding: 1rem;
+  }
 }
 </style>
