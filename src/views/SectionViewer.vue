@@ -23,9 +23,11 @@
 <script>
 import marked from 'marked';
 import TrueFalseActivity from './activities/TrueFalseActivity';
+import MultiActivity from './activities/MultiActivity';
 export default {
   components: {
     'truefalse': TrueFalseActivity,
+    'multi': MultiActivity,
   },
   data() {
     return {

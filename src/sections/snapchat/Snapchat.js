@@ -9,11 +9,12 @@ const snapchat = new Section({
     file: require('./data'),
 });
 
-snapchat.addActivity(new Activities.TrueFalseActivity(`What should you send on snapchat? 
-1. Provocative pictures
-2. Inappropriate images
-3. Normal pictures of your daily activities
-4. Spam to people you don’t like`, true)); 
+snapchat.addActivity(
+  new Activities.MultiActivity(`What should you send on snapchat?`,
+  ['1. Provocative pictures',
+   '2. Inappropriate images',
+   '3. Normal pictures of your daily activities',
+   '4. Spam to people you don’t like'], 2)); 
 
 snapchat.addActivity(
   new Activities.MultiActivity(
