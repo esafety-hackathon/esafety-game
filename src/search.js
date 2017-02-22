@@ -1,5 +1,5 @@
-function flattenArticle(article) {
-  return article[0] + article[1] + article[2];
+function flattenArticle(article, section) {
+  return article[0] + article[1] + article[2] + section;
 }
 
 function searchTerm(term, sections) {
@@ -8,7 +8,7 @@ function searchTerm(term, sections) {
   for (const [sectionName, section] of Object.entries(sections)) {
     const sectionOutput = output[sectionName] = [];
     for (const article of section.file || []) {
-      sectionOutput.push((flattenArticle(article).match(reg) || []).join('').length);
+      sectionOutput.push((flattenArticle(article, sectionName).match(reg) || []).join('').length);
     }
   }
   return output;
