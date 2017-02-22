@@ -97,6 +97,7 @@ li {
 }
 .resultCategory {
   padding: 1rem;
+  margin: 1rem 0;
 }
 #result {
   position: absolute;
