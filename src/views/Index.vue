@@ -39,14 +39,22 @@ h1 {
   transform: translate(-50%, -50%);
 }
 .playbutton {
+  margin-top: 48px;
   height: 100px;
   width: 100px;
   position: absolute;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  cursor: pointer;
+  transition: 200ms height, 200ms width;
 }
+
+.playbutton:hover {
+  height: 120px;
+  width: 120px;
+}
+
 .font {
   margin: 0;
   text-align: center;
