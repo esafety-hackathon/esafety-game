@@ -11,4 +11,14 @@ const snapchat = new Section({
 
 snapchat.addActivity(new Activities.TrueFalseActivity('OK', true));
 
+snapchat.addActivity(
+  new Activities.MultiActivity(
+    'What should you send on Snapchat?', // question for the activity
+    ['Provocative images', 'Spam to people you dont like', 
+     'Your daily activities that you think others would find intersting', 'Offensive images to bully people'], // possible answers
+    2,
+  )
+); // the item in the possible answers that is right (in this it's index 0 so the first answer)
+
+
 export default snapchat;
