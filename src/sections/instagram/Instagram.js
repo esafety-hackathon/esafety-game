@@ -11,4 +11,14 @@ const instagram = new Section({
 
 instagram.addActivity(new Activities.TrueFalseActivity('OK', true));
 
+instagram.addActivity(
+  new Activities.MultiActivity(
+    'What should you put on your Instagram feed?', // question for the activity
+    ['Spam images', 'Pictures stolen from other people', 'Activites that you have done and pictures you have taken yourself',
+     'Provacative and offensive images'], // possible answers
+    2,
+  )
+); // the item in the possible answers that is right (in this it's index 0 so the first answer)
+
+
 export default instagram;
