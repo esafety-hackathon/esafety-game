@@ -15,4 +15,14 @@ snapchat.addActivity(new Activities.TrueFalseActivity(`What should you send on s
 3. Normal pictures of your daily activities
 4. Spam to people you don’t like`, true)); 
 
+snapchat.addActivity(
+  new Activities.MultiActivity(
+    'What should you send on Snapchat?', // question for the activity
+    ['Provocative images', 'Spam to people you dont like', 
+     'Your daily activities that you think others would find intersting', 'Offensive images to bully people'], // possible answers
+    2,
+  )
+); // the item in the possible answers that is right (in this it's index 0 so the first answer)
+
+
 export default snapchat;
