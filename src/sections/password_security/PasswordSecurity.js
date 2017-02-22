@@ -7,6 +7,7 @@ const passwordSecurity = new Section({
     desc: 'Learn more about keeping your passwords safe and secure', // description of the section
     theme: '#08A65C', // colour theme of the section
     textColor: 'white', // text colour
+    file: require('./data'),
 });
 
 passwordSecurity.addActivity(new Activities.CustomActivity(PasswordSecurityComponent));
