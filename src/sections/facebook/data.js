@@ -12,4 +12,9 @@ to handle this. Make sure you aren't just posting stuff blindly for the public t
 
 ![Post specifically](/static/articles/facebook/post-specific.png)`,
     'privacy public appropriate apt settings safe'],
+  [
+    `How do i change my password?`,
+    `Top right corner and click the down arrow, then click Settings and go to account settings. these is an option called Password and 
+once clicked it will bring you to a change password page. Enter your current password once and new password twice and it will be changed.`,
+    'privacy public safe'],
 ];
