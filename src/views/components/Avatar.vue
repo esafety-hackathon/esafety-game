@@ -30,11 +30,15 @@ $hoverSize: 92px;
   cursor: pointer;
   background-size: auto $size;
   background-position: center;
+  transition: 200ms height, 200ms width, 200ms background-size;
   margin: 4px;
 }
 
 .avatar:hover {
   border: 2px solid white;
+  background-size: auto $hoverSize;
+  height: $hoverSize;
+  width: $hoverSize;
   margin: 2px;
 }
 

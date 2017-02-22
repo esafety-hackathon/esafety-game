@@ -15,6 +15,7 @@ body {
   background: url(/static/background.png);
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
+  cursor: url("/static/ccursor.ico");
 }
 #app {
   color: white;
@@ -26,4 +27,5 @@ body {
   display: inline-block;
   margin: 0 auto;
 }
+
 </style>
