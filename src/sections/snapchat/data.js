@@ -2,8 +2,8 @@ module.exports =
 [
   [
     `How do I change my password on snapchat?`,
-    `Settings ➡️️ Password ➡️️ Enter Current password ➡️️ Enter new password`
-    `password Snapchat privacys`
+    `Settings ➡️️ Password ➡️️ Enter Current password ➡️️ Enter new password`,
+    `password Snapchat privacy`
   ],
   [
     'How do I change who can view my story on Snapchat?',
