@@ -9,7 +9,6 @@ const twitter = new Section({
     file: require('./data'),
 });
 
-twitter.addActivity(new Activities.TrueFalseActivity('OK', true));
 twitter.addActivity(
   new Activities.MultiActivity(
     'What should you post on your Twitter feed?', // question for the activity

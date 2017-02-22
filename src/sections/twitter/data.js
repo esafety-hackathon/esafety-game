@@ -1,15 +1,16 @@
 module.exports =
 [
   [
-    `What does my profile look like to the public?`,
-    `You can simply click [here](https://www.facebook.com/profile.php?viewas=100000686899395) to see what your profile would look like
-to the public.`,
+    `How can I change who visits my account?`,
+    `Go to _Settings > Privacy and safety > Tweet Privacy_. Select "Protect my tweets" if you want only your followers to see your tweets.
+
+![privacy](/static/articles/twitter/safety.png)`,
     'privacy public safe'],
   [
     `What is appropriate for me to post?`,
-`It depends, you might want some people to see certain posts, and others not to - you can configure your settings when posting messages
-to handle this. Make sure you aren't just posting stuff blindly for the public to see unless you're sure!
+`It depends, you might want some people to see certain posts, and others not to. You can protect your tweets if you want
+only your followers to see your posts.
 
-![Post specifically](/static/articles/facebook/post-specific.png)`,
+![privacy](/static/articles/twitter/safety.png)`,
     'privacy public appropriate apt settings safe'],
 ];

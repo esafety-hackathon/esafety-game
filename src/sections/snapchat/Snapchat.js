@@ -10,13 +10,6 @@ const snapchat = new Section({
 });
 
 snapchat.addActivity(
-  new Activities.MultiActivity(`What should you send on snapchat?`,
-  ['1. Provocative pictures',
-   '2. Inappropriate images',
-   '3. Normal pictures of your daily activities',
-   '4. Spam to people you don’t like'], 2)); 
-
-snapchat.addActivity(
   new Activities.MultiActivity(
     'What should you send on Snapchat?', // question for the activity
     ['Provocative images', 'Spam to people you dont like', 
