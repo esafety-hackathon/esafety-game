@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="hSection">
-    <h1><span @click="$router.go(-1)" style="cursor: pointer">🔙</span>  {{ this.section.name }} <span class="light">| Test</span></h1>
+    <h1><span @click="$router.go(-1)" style="cursor: pointer">🔙</span>  {{ this.section.name }} <span class="light">| Activities</span></h1>
     <div class="testQ" v-for="activity in this.section.activities">
       <component :is="activityType(activity)" :activity="activity"></component>
     </div>

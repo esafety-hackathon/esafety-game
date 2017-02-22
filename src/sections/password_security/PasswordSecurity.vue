@@ -1,7 +1,7 @@
 <template>
   <div id="passwordgenerator">
-    <button @click="generate" :disabled="generating ? true : false">Generate password</button>
-    <div id="password">{{ password }}</div>
+    <button @click="generate" :disabled="generating ? true : false">Generate</button>
+    <span id="password">{{ password }}</span>
   </div>
 </template>
 
@@ -36,6 +36,5 @@ export default {
 <style scoped>
 button, #password {
   font-size: 2rem;
-  font-family: consolas;
 }
 </style>
