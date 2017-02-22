@@ -5,7 +5,7 @@
     <div class="button" @click="select(true)">Yes</div>
     <div class="button" @click="select(false)">No</div>
   </div>
-  <div :class="'out ' + " v-if="correct !== null">{{ correct ? 'Correct' : `Incorrect, the answer was ${activity.answer}`}}!</div>
+  <div :class="'out ' + correct" v-if="correct !== null">{{ correct ? `Correct, it was ${activity.answer}` : `Incorrect, the answer was ${activity.answer}`}}!</div>
 </div>
 </div>
 </template>
@@ -26,6 +26,23 @@ export default {
 }
 </script>
 <style scoped>
+
+.out.true {
+  background: #B2FF59;
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 18px;
+  padding: 14px;
+}
+
+.out.false {
+  background: #FF6E40;
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 18px;
+  padding: 14px;
+}
+
 .truefalse {
   margin-bottom: 24px;
   border-left: 4px solid #999;
