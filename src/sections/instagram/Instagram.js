@@ -9,8 +9,6 @@ const instagram = new Section({
     file: require('./data')
 });
 
-instagram.addActivity(new Activities.TrueFalseActivity('OK', true));
-
 instagram.addActivity(
   new Activities.MultiActivity(
     'What should you put on your Instagram feed?', // question for the activity
